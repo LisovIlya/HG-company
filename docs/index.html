@@ -15,17 +15,6 @@
                 <span class="hamburger__plank"></span>
                 <span class="hamburger__plank"></span>
             </a>
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                    <li class="menu__item"></li>
-                </ul>
-            </nav>
             <button class="btn header__consult consultant">Консультант</button>
             <div class="header__right-side">
                 <ul class="socials">
@@ -65,6 +54,26 @@
             </div>
         </div>
         <div class="fixed-band">
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="" data-scroll-to="hero" class="menu__link">Главная</a></li>
+                    <li class="menu__item">
+                        <a href="" data-scroll-to="services" class="menu__link">Услуги</a>
+                        <ul class="services__menu">
+                            <li class="services__menu__item"><a href="" class="service__menu__link">Архитектурное проектирование</a></li>
+                            <li class="services__menu__item"><a href="" class="service__menu__link">Дизайн интерьера</a></li>
+                            <li class="services__menu__item"><a href="" class="service__menu__link">Ландшафтный дизайн</a></li>
+                            <li class="services__menu__item"><a href="" class="service__menu__link">Инженерное проектирование</a></li>
+                            <li class="services__menu__item"><a href="" class="service__menu__link">Строительные и ландшафтные работы</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                    <li class="menu__item"></li>
+                </ul>
+            </nav>
             <div class="fixed-band__space"></div>
             <a href="./index.html" class="logo">
                 <svg class="logo__icon">
@@ -73,7 +82,7 @@
             </a>
         </div>
         <div class="maincontent">
-            <section class="section hero-section">
+            <section data-section-id="hero" class="section hero-section">
                 <div class="container hero__container">
                     <div class="hero__content">
                         <img src="./images/content/26.5.jpg" class="hero__image">
@@ -85,7 +94,95 @@
                     </div>
                 </div>
             </section>
-            <section class="section service-section">
+            <section data-section-id="services" class="section service-section">
+                <div class="container">
+                    <div class="headline">
+                        <h2 class="title section__title headline__title">Услуги</h2>
+                        <div class="headline__subtitle">Для того что бы рассчитать стоимость, нажмите на интересую вас услугу
+                        </div>
+                    </div>
+                    <div class="services-container">
+                        <ul class="services">
+                            <li class="services__item service">
+                                <a href="#" class="service__link">
+                                    <h3 class="service__title">Архитектурное проектирование</h3>
+                                    <div class="service__description">
+                                        <p>
+                                            Разработка проектов жилых домов, общественных, коммерческихж объектов различного назначения
+                                        </p>
+                                    </div>
+                                    <div class="service__item__icon">
+                                        <svg class="service__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#house"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="services__item service">
+                                <a href="#" class="service__link">
+                                    <h3 class="service__title">Дизайн интерьера</h3>
+                                    <div class="service__description">
+                                        <p>
+                                            Разработка проектов дизайна интерьера для частных жилых и коммерческих помещений, офисов, гостиниц, отелей, кафе и ресторанов
+                                        </p>
+                                    </div>
+                                    <div class="service__item__icon">
+                                        <svg class="service__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#interior"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="services__item service">
+                                <a href="#" class="service__link">
+                                    <h3 class="service__title">Ландшафтный дизайн</h3>
+                                    <div class="service__description">
+                                        <p>
+                                            Разработка проектов ландшафтного дизайна и благоустройства участков различного назначения.
+                                        </p>
+                                    </div>
+                                    <div class="service__item__icon">
+                                        <svg class="service__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#tree__icon"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="services__item service">
+                                <a href="#" class="service__link">
+                                    <h3 class="service__title">Инженерное проектирование</h3>
+                                    <div class="service__description">
+                                        <p>
+                                            Разработка проектов инженерно-технического раздела в архитектурном проектировании, а так-же инженерные системы в ландшафтном дизайне
+                                        </p>
+                                    </div>
+                                    <div class="service__item__icon">
+                                        <svg class="service__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#engineering"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="services__item service">
+                                <a href="#" class="service__link">
+                                    <h3 class="service__title">Строительные и ландшафтные работы</h3>
+                                    <div class="service__description">
+                                        <p>
+                                            Озеленение и посадка растений, устройство рулонного газона и посев газона “под ключ”, сервисное обслуживание объектов, комплексный уход за растениями и территорией
+                                        </p>
+                                    </div>
+                                    <div class="service__item__icon">
+                                        <svg class="service__icon">
+                                            <use xlink:href="./images/icons/sprite.svg#construction"></use>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section data-section-id="services" class="section service-section">
                 <div class="container">
                     <div class="headline">
                         <h2 class="title section__title headline__title">Услуги</h2>
